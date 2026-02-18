@@ -71,10 +71,11 @@ def analyze_stock(ticker):
 
     Example output: {{"score": -5, "reason": "Weak quarterly earnings and CEO resignation reported."}}
     """
-    
     try:
-        response = model.generate_content(prompt)
+        response = model.generate_content(prompt, request_options={"timeout": 15})
         # Extract JSON from response
+
+        
         clean_text = re.sub(r'```json|```', '', response.text).strip()
         data = json.loads(clean_text)
         return {"news": news_items, "score": data['score'], "reason": data['reason']}
