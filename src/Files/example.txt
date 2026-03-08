@@ -1,0 +1,7 @@
+The quick brown fox jumps over the lazy dog. 
+This pangram contains every letter of the alphabet at least once. 
+It's commonly used for testing typewriters, fonts, and keyboards. 
+The phrase has been in use since at least the late 1800s and remains popular in typography and design work today. Many variations exist, each attempting to be clever or entertaining while 
+maintaining the pangram property.This is a new linethis is first line 
+this is second line 
+this is third line 
