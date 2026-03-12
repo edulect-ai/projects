@@ -29,6 +29,9 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
    ```bash
    cd /my_projects
    ```
+   checkout to branch: 
+
+   git checkout python-tutorial
 
 2. **Create a virtual environment:**
    ```bash
