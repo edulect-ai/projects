@@ -8,4 +8,5 @@ dependencies = [
     "nltk>=3.9.3",
     "scikit-learn>=1.8.0",
     "streamlit>=1.55.0",
+    "svgling>=0.5.0",
 ]

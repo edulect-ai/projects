@@ -219,6 +219,7 @@ dependencies = [
     { name = "nltk" },
     { name = "scikit-learn" },
     { name = "streamlit" },
+    { name = "svgling" },
 ]
 
 [package.metadata]
@@ -226,6 +227,7 @@ requires-dist = [
     { name = "nltk", specifier = ">=3.9.3" },
     { name = "scikit-learn", specifier = ">=1.8.0" },
     { name = "streamlit", specifier = ">=1.55.0" },
+    { name = "svgling", specifier = ">=0.5.0" },
 ]
 
 [[package]]
@@ -628,6 +630,27 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/92/8e/f2b8b4fa8ba65aae251170c54f8ce198fb588fc348301c2b624f8c63efac/streamlit-1.55.0.tar.gz", hash = "sha256:015e512bbd02d000f4047e51118dc086b70e7d9c46b4a11a33c2509731379626", size = 8612008, upload-time = "2026-03-03T22:26:02.149Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/dc/e6/412c1e1f200ca8c32ecf10201839183e261ad61ced3ede34a66f6d4be3cf/streamlit-1.55.0-py3-none-any.whl", hash = "sha256:1e4a16449c6131696180f4ddb40ea8c51834e89c2a43e1b0362bc9b1cfd9b415", size = 9075714, upload-time = "2026-03-03T22:25:59.126Z" },
+]
+
+[[package]]
+name = "svgling"
+version = "0.5.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "svgwrite" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/88/21/78a382248ca5232027b806fc85959705bba5f29ed917f941939572a2ba9c/svgling-0.5.0.tar.gz", hash = "sha256:df81bff77adb6142db9aa46277a7d5c4195215d3e86499d0fc940163eee1ecc5", size = 33150, upload-time = "2024-08-20T13:53:59.404Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/87/d0/570cbaff44446824b08084c1ce4b47efca0727a5a9bf11c233177ea09b05/svgling-0.5.0-py3-none-any.whl", hash = "sha256:561aa57efc642e95743c5d385bfbe251527fcdff77776cdcd33752c14cbfee89", size = 31977, upload-time = "2024-08-20T13:53:57.787Z" },
+]
+
+[[package]]
+name = "svgwrite"
+version = "1.4.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/16/c1/263d4e93b543390d86d8eb4fc23d9ce8a8d6efd146f9427364109004fa9b/svgwrite-1.4.3.zip", hash = "sha256:a8fbdfd4443302a6619a7f76bc937fc683daf2628d9b737c891ec08b8ce524c3", size = 189516, upload-time = "2022-07-14T14:05:26.107Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/84/15/640e399579024a6875918839454025bb1d5f850bb70d96a11eabb644d11c/svgwrite-1.4.3-py3-none-any.whl", hash = "sha256:bb6b2b5450f1edbfa597d924f9ac2dd099e625562e492021d7dd614f65f8a22d", size = 67122, upload-time = "2022-07-14T14:05:24.459Z" },
 ]
 
 [[package]]
