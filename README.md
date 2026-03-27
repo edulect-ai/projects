@@ -2,6 +2,10 @@
 
 Welcome to my repository for learning Generative AI. This section focuses on the foundational concepts of **Natural Language Processing (NLP)**, which are essential before diving into complex Large Language Models (LLMs).
 
+## Road MAP
+
+<img src = "./src/nlp/images/road_map.png" width = "80%">
+
 ## 📚 Module 1: NLP Fundamentals & Text Preprocessing
 
 This module covers the essential steps to clean and prepare raw text data so that machines can understand it.
