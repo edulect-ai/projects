@@ -5,6 +5,7 @@ build/
 dist/
 wheels/
 *.egg-info
+src/nlp/.DS_Store
 
 # Virtual environments
 .venv
