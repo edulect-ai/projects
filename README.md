@@ -48,4 +48,66 @@ Process of reading text and assigning a grammatical category (like noun, verb, a
  
 
 ---
-*Stay tuned as I add more modules on Embeddings, Attention Mechanisms, and LLMs!*
+
+## 📊 Module 2: Text Representation & Vectorization
+
+After preprocessing text, the next challenge is converting it into numerical vectors that machine learning models can understand. This module explores various techniques to represent text as numbers, from simple counting methods to sophisticated dense embeddings.
+
+### 1. One-Hot Encoding
+One-Hot Encoding is the most basic way to represent text numerically by converting categorical data into binary vectors.
+* **[01_One_Hot_Encoding](./src/nlp/text_to_vectors/one_hot_encoding.ipynb)**
+  * **Concepts Covered:**
+    * Converting categories into binary representations
+    * Why one-hot encoding prevents false hierarchies
+    * The curse of dimensionality and sparsity problems
+  * **Objective:** Understand the foundational encoding method and its limitations for large vocabularies.
+
+### 2. Bag of Words (BoW)
+The Bag of Words model represents text as unordered collections of word counts, creating feature vectors based on vocabulary frequency.
+* **[02_Bag_of_Words](./src/nlp/text_to_vectors/bag_of_words.ipynb)**
+  * **Concepts Covered:**
+    * Building vocabulary from a corpus
+    * Counting word frequencies to create feature vectors
+    * Why BoW "forgets" word order and context
+  * **Objective:** Learn how to transform documents into numerical feature vectors through word frequency counting.
+
+### 3. N-grams
+N-grams capture local context by grouping adjacent words together, preserving some word order information that Bag of Words loses.
+* **[03_N-grams](./src/nlp/text_to_vectors/n-grams.ipynb)**
+  * **Concepts Covered:**
+    * Unigrams (N=1), Bigrams (N=2), and Trigrams (N=3)
+    * How N-grams preserve context and semantic relationships
+    * Vocabulary construction from overlapping word sequences
+  * **Objective:** Understand how grouping adjacent words captures context that single-word models miss.
+
+### 4. TF-IDF (Term Frequency-Inverse Document Frequency)
+TF-IDF improves upon simple counting by weighting words based on their importance: frequent in a document but rare across all documents.
+* **[04_TF-IDF](./src/nlp/text_to_vectors/td-idf.ipynb)**
+  * **Concepts Covered:**
+    * Term Frequency (TF): How often a word appears in a document
+    * Inverse Document Frequency (IDF): How rare a word is across the corpus
+    * Combining TF and IDF to score word importance
+  * **Objective:** Learn how to weight words intelligently to emphasize meaningful terms while downplaying common words.
+
+### 5. Word Embeddings & Word2Vec
+Word embeddings represent words as dense vectors in continuous space, capturing semantic meaning and word relationships through deep learning.
+* **[05_Word_Embeddings_&_Word2Vec](./src/nlp/text_to_vectors/word2vec.ipynb)**
+  * **Concepts Covered:**
+    * Dense vector representations vs. sparse vectors
+    * Word2Vec: Skip-gram and CBOW architectures
+    * Semantic relationships learned by neural networks (e.g., "king" - "man" + "woman" ≈ "queen")
+    * The linguistic theory: "You shall know a word by the company it keeps"
+  * **Objective:** Understand modern embedding techniques that capture mathematical relationships between words with similar meanings.
+
+### 6. Practical Application: SMS Spam Classification
+A hands-on project applying vectorization techniques to real-world data classification.
+* **[06_Practical_Project](./src/nlp/text_to_vectors/practical.ipynb)**
+  * **Concepts Covered:**
+    * Loading and exploring the SMS Spam Collection Dataset
+    * Preprocessing text with stemming, stopword removal, and regularization
+    * Comparing different vectorization approaches (BoW, TF-IDF, embeddings)
+    * Building and evaluating classification models
+  * **Objective:** Apply learned vectorization techniques to classify spam vs. legitimate SMS messages.
+
+---
+*Stay tuned as I add more modules on Attention Mechanisms, Transformers, and LLMs!*
